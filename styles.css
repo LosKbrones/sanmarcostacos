@@ -8,15 +8,15 @@
 }
 
 .title-main-display{
-    background: white;
-    opacity: 0.5;
-    height: 80vh;
-    width: 25vw;
+    color: white;
+    font-family: cursive;
+    font-style: oblique;
+    font-size: 100px;
+    font-weight: 900;
+    text-align: center;
+    padding-top: 2%;
 }
 
-.title-main-display span{
-    color: white;
-}
 
 .test{
     width: 100vw;
