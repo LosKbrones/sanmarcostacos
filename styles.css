@@ -1,5 +1,5 @@
 .landing-page{
-    background-image: url("http://www.southernportal.com/uploads/6/9/2/1/6921786/377332070_orig.jpg?446");
+    background-image: url('https://www.chowstatic.com/assets/recipe_photos/29554_tacos_al_pastor.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     width: 100vw;
@@ -7,7 +7,14 @@
     background-attachment: fixed;
 }
 
-.landing-page span{
+.title-main-display{
+    background: white;
+    opacity: 0.5;
+    height: 80vh;
+    width: 25vw;
+}
+
+.title-main-display span{
     color: white;
 }
 
