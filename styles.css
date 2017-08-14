@@ -1,0 +1,18 @@
+.landing-page{
+    background-image: url("http://www.southernportal.com/uploads/6/9/2/1/6921786/377332070_orig.jpg?446");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 120vh;
+    background-attachment: fixed;
+}
+
+.landing-page span{
+    color: white;
+}
+
+.test{
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+}
