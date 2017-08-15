@@ -35,6 +35,9 @@
     width: 33vw;
     height: 20vh;
     border: solid white 1px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 .weekly-specials special2{
@@ -53,6 +56,14 @@
     width: 33vw;
     height: 20vh;
     border: solid white 1px;
+}
+
+.weekly-specials h4{
+    text-align: center;
+}
+
+.weekly-specials span{
+    font-size: 5vh;
 }
 
 
