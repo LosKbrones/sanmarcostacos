@@ -1,9 +1,9 @@
 .landing-page{
     background-image: url('https://www.chowstatic.com/assets/recipe_photos/29554_tacos_al_pastor.jpg');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     width: 100vw;
-    height: 120vh;
+    height: 38vh;
     background-attachment: fixed;
 }
 
@@ -11,10 +11,48 @@
     color: white;
     font-family: cursive;
     font-style: oblique;
-    font-size: 100px;
+    font-size: 5vh;
     font-weight: 900;
     text-align: center;
-    padding-top: 2%;
+    padding-top: 10%;
+}
+
+.title-main-display img{
+    width: 5vw;
+    height: auto;
+    color: white;
+}
+
+.weekly-specials{
+    display: flex;
+    color: white;
+}
+
+.weekly-specials special1{
+    background-image: url('https://cdn.kiwilimon.com/recetaimagen/28854/thumb400x300-29980.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 33vw;
+    height: 20vh;
+    border: solid white 1px;
+}
+
+.weekly-specials special2{
+    background-image: url('https://cdn.kiwilimon.com/recetaimagen/28854/thumb400x300-29980.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 33vw;
+    height: 20vh;
+    border: solid white 1px;
+}
+
+.weekly-specials special3{
+    background-image: url('https://cdn.kiwilimon.com/recetaimagen/28854/thumb400x300-29980.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 33vw;
+    height: 20vh;
+    border: solid white 1px;
 }
 
 
