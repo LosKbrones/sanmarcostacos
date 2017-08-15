@@ -1,88 +1,86 @@
-.landing-page{
-    background-image: url('https://www.chowstatic.com/assets/recipe_photos/29554_tacos_al_pastor.jpg');
+*, img{
+    border: 1PX solid white;
+}
+body{
+    background-color: #3d3d3d;
+}
+.landing-page {
     background-repeat: no-repeat;
     background-size: contain;
     width: 100vw;
-    height: 38vh;
+    max-height: 38vh;
     background-attachment: fixed;
 }
-
-.title-main-display{
-    color: white;
-    font-family: cursive;
-    font-style: oblique;
-    font-size: 5vh;
-    font-weight: 900;
-    text-align: center;
-    padding-top: 10%;
+.video-background{
+        width: 100%;
+        z-index: -100;
 }
 
-.title-main-display img{
+.title-main-display {
+    width: 100%;;
+    position: absolute;
+    top: 14%;
+    color: white;
+    z-index: 5;
+    font-size: 3vh;
+    text-align: center;
+    font-weight: 100;
+    /*font-family: cursive;
+    font-style: oblique;*/
+    /*padding-top: 10%;*/
+}
+
+.title-main-display img {
     width: 5vw;
     height: auto;
     color: white;
 }
 
-specials-header{
+specials-header {
     display: flex;
     justify-content: center;
     font-size: 1.25em;
+    color: white;
     margin: 8px;
 }
 
-.weekly-specials{
+.weekly-specials {
+    
     display: flex;
+    flex-direction: column;
     color: white;
     margin-top: 0vh;
 }
 
-.weekly-specials special1{
-    background-image: url('https://cdn.kiwilimon.com/recetaimagen/28854/thumb400x300-29980.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
+.weekly-specials img{
+    /*background-image: url('https://cdn.kiwilimon.com/recetaimagen/28854/thumb400x300-29980.jpg');*/
+    /*background-repeat: no-repeat;
+    background-size: cover;*/
     width: 33vw;
-    height: 20vh;
-    border: solid white 1px;
-    display: flex;
-    flex-direction: column;
+    height: 19vh;
+    border-radius: 50%;
+    /*border: solid white 1px;*/
+}
+.weekly-specials special1, special2, special3 {
+        display: flex;
+    /*flex-direction: column;*/
     justify-content: space-around;
 }
+/*special1 h4, special1 span, special3 h4, special3 span{
 
-.weekly-specials special2{
-    background-image: url('https://cdn.kiwilimon.com/recetaimagen/28854/thumb400x300-29980.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 33vw;
-    height: 20vh;
-    border: solid white 1px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
+    margin-left: 175%;
+}*/
 
-.weekly-specials special3{
-    background-image: url('https://cdn.kiwilimon.com/recetaimagen/28854/thumb400x300-29980.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 33vw;
-    height: 20vh;
-    border: solid white 1px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
-
-.weekly-specials h4{
+.weekly-specials h4 {
     text-align: center;
 }
 
-.weekly-specials span{
+.weekly-specials span {
     font-size: 5vh;
     text-align: center;
 }
 
-
-.test{
+.test {
     width: 100vw;
     height: 100vh;
     background-color: white;
