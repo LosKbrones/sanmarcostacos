@@ -77,10 +77,9 @@ specials-header {
     font-size: 5vh;
     text-align: center;
 }
-.about{
-    background-image: url(./images/chef.jpg);
-    background-size: cover;
-    width: 100
+.about img{
+    width: 100%;
+ 
 }
 /*
 .test {
