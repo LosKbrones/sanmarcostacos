@@ -23,9 +23,17 @@
     color: white;
 }
 
+specials-header{
+    display: flex;
+    justify-content: center;
+    font-size: 1.25em;
+    margin: 8px;
+}
+
 .weekly-specials{
     display: flex;
     color: white;
+    margin-top: 0vh;
 }
 
 .weekly-specials special1{
@@ -47,6 +55,9 @@
     width: 33vw;
     height: 20vh;
     border: solid white 1px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 .weekly-specials special3{
@@ -56,6 +67,9 @@
     width: 33vw;
     height: 20vh;
     border: solid white 1px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 .weekly-specials h4{
@@ -64,6 +78,7 @@
 
 .weekly-specials span{
     font-size: 5vh;
+    text-align: center;
 }
 
 
