@@ -1,6 +1,4 @@
-*, img{
-    border: 1PX solid white;
-}
+
 body{
     background-color: #3d3d3d;
 }
@@ -79,9 +77,14 @@ specials-header {
     font-size: 5vh;
     text-align: center;
 }
-
+.about{
+    background-image: url(./images/chef.jpg);
+    background-size: cover;
+    width: 100
+}
+/*
 .test {
     width: 100vw;
     height: 100vh;
     background-color: white;
-}
+}*/
