@@ -1,6 +1,6 @@
 
 body{
-    background-color: #3d3d3d;
+    background-color: #121312;
 }
 .landing-page {
     background-repeat: no-repeat;
@@ -54,8 +54,8 @@ specials-header {
     /*background-image: url('https://cdn.kiwilimon.com/recetaimagen/28854/thumb400x300-29980.jpg');*/
     /*background-repeat: no-repeat;
     background-size: cover;*/
-    width: 33vw;
-    height: 14.445vh;
+    /*width: 33vw;*/
+    height: 11em;
     border-radius: 50%;
     /*border: solid white 1px;*/
 }
@@ -77,9 +77,21 @@ specials-header {
     font-size: 5vh;
     text-align: center;
 }
-.about img{
+.about{
+    background-image: url(./images/chef.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw; 
+    height: 250px;
+}
+/*.about img{
     width: 100%;
- 
+}*/
+.about-text{
+    z-index: 5;
+    width: 34%;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8)
 }
 /*
 .test {
