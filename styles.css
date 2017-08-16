@@ -46,8 +46,10 @@ specials-header {
     
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
     color: white;
     margin-top: 0vh;
+    height: 65vh;
 }
 
 .weekly-specials img{
