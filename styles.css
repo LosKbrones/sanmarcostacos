@@ -1,6 +1,6 @@
 
 body{
-    background-color: #3d3d3d;
+    background-color: #121312;
 }
 .landing-page {
     background-repeat: no-repeat;
@@ -43,7 +43,8 @@ specials-header {
 }
 
 .weekly-specials {
-    
+    background: linear-gradient(#121312, black);
+    height: 24em;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -53,12 +54,12 @@ specials-header {
 }
 
 .weekly-specials img{
+    height: 18vh;
+    border-radius: 50%;
     /*background-image: url('https://cdn.kiwilimon.com/recetaimagen/28854/thumb400x300-29980.jpg');*/
     /*background-repeat: no-repeat;
     background-size: cover;*/
-    width: 33vw;
-    height: 19vh;
-    border-radius: 50%;
+    /*width: 33vw;*/
     /*border: solid white 1px;*/
 }
 .weekly-specials special1, special2, special3 {
