@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display');
 
 body{
-    background-color: #121312;
+    /*background-color: #121312;*/
 }
 .landing-page {
     background-repeat: no-repeat;
@@ -21,7 +21,7 @@ body{
     width: 100%;;
     position: absolute;
     top: 14%;
-    color: white;
+    color: gold;
     z-index: 5;
     font-size: 3vh;
     text-align: center;
@@ -38,7 +38,7 @@ body{
 }
 
 specials-header {
-    background-image: url(./images/whirlpool.png);
+    /*background-image: url(./images/whirlpool.png);*/
     background-color: white;
     display: flex;
     justify-content: center;
@@ -49,11 +49,11 @@ specials-header {
 }
 
 .weekly-specials {
-    background: linear-gradient(#121312, black);
+    /*background: linear-gradient(#121312, black);*/
     height: 58vh;
     display: flex;
     flex-direction: column;
-    color: white;
+    color: black;
     margin-top: 3vh;
 }
 
