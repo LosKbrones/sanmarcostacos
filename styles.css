@@ -1,7 +1,8 @@
 
 body{
     background-color: #121312;
-    font-family: Arial, sans-serif;
+    /*font-family: Arial, sans-serif;*/
+    font-family: serif;
 }
 .landing-page {
     background-repeat: no-repeat;
@@ -25,6 +26,9 @@ body{
     text-align: center;
     display: flex;
     flex-direction: column;
+    font-variant: small-caps;
+    font-style: oblique;
+    font-family: serif;
     /*justify-content: flex-start;*/
 }
 
@@ -42,9 +46,6 @@ menu-bar-main{
 
 .title-main-display span{
      font-weight: 100;
-    font-variant: small-caps;
-    font-style: oblique;
-    font-family: serif;
     font-size: 2em;
 }
 
@@ -71,6 +72,10 @@ specials-header {
     color: white;
     margin-top: 0vh;
     height: 65vh;
+    background-image: url('http://www.periodicolasala.com/wp-content/uploads/2016/04/feria-nacional-de-san-marcos-aguascalientes-2016_0-586x600.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: black;
 }
 
 .weekly-specials img{
