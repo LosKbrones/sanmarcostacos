@@ -75,12 +75,18 @@ specials-header {
     background-image: url('http://www.periodicolasala.com/wp-content/uploads/2016/04/feria-nacional-de-san-marcos-aguascalientes-2016_0-586x600.jpg');
     background-repeat: no-repeat;
     background-size: contain;
+}
+
+.layer{
     background-color: black;
+    height: 100%;
+    opacity: .95;
 }
 
 .weekly-specials img{
     height: 18vh;
     border-radius: 50%;
+    opacity: 1;
     /*background-image: url('https://cdn.kiwilimon.com/recetaimagen/28854/thumb400x300-29980.jpg');*/
     /*background-repeat: no-repeat;
     background-size: cover;*/
