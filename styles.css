@@ -66,9 +66,6 @@ specials-header {
 .weekly-specials {
     background: linear-gradient(#121312, black);
     height: 24em;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
     color: white;
     margin-top: 0vh;
     height: 65vh;
@@ -79,8 +76,11 @@ specials-header {
 
 .layer{
     background-color: black;
-    height: 100%;
     opacity: .95;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 .weekly-specials img{
