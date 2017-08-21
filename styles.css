@@ -136,11 +136,14 @@ specials-header {
 
 .menu{
     width: 100vw;
-    height: 100vh;
+    height: 60vh;
     background: rgba(204, 204, 204, 0.85);
     z-index: 1;
     position: absolute;
     margin-top: -667px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 .menu h1{
@@ -148,8 +151,22 @@ specials-header {
 }
 
 .menu h2{
+    margin-right: 0;
+    display: flex;
+
+}
+
+#taco-header{
     border-bottom: solid black 1px;
-    margin-right: 75%;
+}
+
+.tacos p{
+    font-size: .50em;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-left: 0px;
+    border: solid black 1px;
 }
 
 .menu li{
