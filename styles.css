@@ -144,6 +144,7 @@ specials-header {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    color: white;
 }
 
 .menu h1{
@@ -153,11 +154,13 @@ specials-header {
 .menu h2{
     margin-right: 0;
     display: flex;
+    line-height: 25px;
+    font-size: 1.5em;
 
 }
 
 #taco-header{
-    border-bottom: solid black 1px;
+    border-bottom: solid white 1px;
 }
 
 .tacos p{
@@ -166,7 +169,7 @@ specials-header {
     align-items: center;
     justify-content: flex-end;
     padding-left: 0px;
-    border: solid black 1px;
+    /*border: solid black 1px;*/
 }
 
 .menu li{
