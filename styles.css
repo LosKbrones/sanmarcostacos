@@ -1,28 +1,29 @@
 
 body{
-    background-color: #121312;
+    /*background-color: #121312;*/
     /*font-family: Arial, sans-serif;*/
     font-family: serif;
 }
 .landing-page {
+    width: 100vw;
+    height: 38vh;
+    background-attachment: fixed;
+    background-image: url("https://www.chowstatic.com/assets/recipe_photos/29554_tacos_al_pastor.jpg");
     background-repeat: no-repeat;
     background-size: contain;
-    width: 100vw;
-    max-height: 38vh;
-    background-attachment: fixed;
 }
-.video-background{
+/*.video-background{
         width: 100%;
         z-index: -100;
-}
+}*/
 
 .title-main-display {
     width: 100%;
     height: 15vh;
-    position: absolute;
-    top: 3%;
+    /*position: absolute;*/
+    /*top: 3%;*/
     color: white;
-    z-index: 5;
+    /*z-index: 5;*/
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -59,23 +60,23 @@ specials-header {
     display: flex;
     justify-content: center;
     font-size: 1.25em;
-    color: white;
+    /*color: white;*/
     margin: 8px;
 }
 
 .weekly-specials {
-    background: linear-gradient(#121312, black);
+    /*background: linear-gradient(#121312, black);*/
     height: 24em;
-    color: white;
-    margin-top: 0vh;
+    /*color: white;*/
+    /*margin-top: 0vh;*/
     height: 65vh;
-    background-image: url('http://www.periodicolasala.com/wp-content/uploads/2016/04/feria-nacional-de-san-marcos-aguascalientes-2016_0-586x600.jpg');
+    /*background-image: url('http://www.periodicolasala.com/wp-content/uploads/2016/04/feria-nacional-de-san-marcos-aguascalientes-2016_0-586x600.jpg');*/
     background-repeat: no-repeat;
     background-size: contain;
 }
 
 .layer{
-    background-color: black;
+    /*background-color: black;*/
     opacity: .95;
     height: 100%;
     display: flex;
@@ -111,13 +112,66 @@ specials-header {
     font-size: 5vh;
     text-align: center;
 }
+
+.about{
+    background-image: url('./images/chef.jpg');
+    background-attachment: fixed;
+}
+
 .about img{
     width: 100%;
- 
 }
-/*
-.test {
+
+.menu-image{
+    text-align: center;
     width: 100vw;
     height: 100vh;
-    background-color: white;
-}*/
+    background-image: url('http://www.periodicolasala.com/wp-content/uploads/2016/04/feria-nacional-de-san-marcos-aguascalientes-2016_0-586x600.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment: fixed;
+    z-index: 0;
+    
+}
+
+.menu{
+    width: 100vw;
+    height: 60vh;
+    background: rgba(204, 204, 204, 0.85);
+    z-index: 1;
+    position: absolute;
+    margin-top: -667px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: white;
+}
+
+.menu h1{
+    text-align: center;
+}
+
+.menu h2{
+    margin-right: 0;
+    display: flex;
+    line-height: 25px;
+    font-size: 1.5em;
+
+}
+
+#taco-header{
+    border-bottom: solid white 1px;
+}
+
+.tacos p{
+    font-size: .50em;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-left: 0px;
+    /*border: solid black 1px;*/
+}
+
+.menu li{
+    list-style: none;
+}
