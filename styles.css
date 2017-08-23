@@ -136,7 +136,7 @@ specials-header {
 
 .menu{
     width: 100vw;
-    height: 60vh;
+    height: 100vh;
     background: rgba(204, 204, 204, 0.85);
     z-index: 1;
     position: absolute;
@@ -144,34 +144,34 @@ specials-header {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    align-items: center;
     color: white;
 }
 
 .menu h1{
     text-align: center;
+    font-size: 2.5em;
 }
 
 .menu h2{
     margin-right: 0;
     display: flex;
-    line-height: 25px;
-    font-size: 1.5em;
-
-}
-
-#taco-header{
+    line-height: 40px;
+    font-size: 2em;
     border-bottom: solid white 1px;
 }
 
-.tacos p{
-    font-size: .50em;
+
+#menu-items{
+    width: 90vw;
     display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    padding-left: 0px;
-    /*border: solid black 1px;*/
+    flex-direction: column;
+    line-height: 25px;
+    font-size: 1em;
 }
 
 .menu li{
     list-style: none;
+    display: flex;
+    justify-content: space-between;
 }
