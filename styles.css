@@ -136,7 +136,7 @@ specials-header {
 
 .menu{
     width: 100vw;
-    height: 100vh;
+    /*height: 100vh;*/
     background: rgba(204, 204, 204, 0.85);
     z-index: 1;
     position: absolute;
@@ -151,10 +151,12 @@ specials-header {
 .menu h1{
     text-align: center;
     font-size: 2.5em;
+    margin-top: 15px;
 }
 
 .menu h2{
     margin-right: 0;
+    margin-top: 20px;
     display: flex;
     line-height: 40px;
     font-size: 2em;
@@ -166,12 +168,30 @@ specials-header {
     width: 90vw;
     display: flex;
     flex-direction: column;
-    line-height: 25px;
     font-size: 1em;
 }
 
-.menu li{
+#menu-items span{
+    font-weight: 200;
+}
+
+#menu-items h3{
+    font-size: 1.25em;
+}
+
+#menu-items li{
     list-style: none;
     display: flex;
     justify-content: space-between;
+    margin-top: 15px;
 }
+
+#ind-item-text{
+    margin-right: 15px;
+}
+
+#ind-item-text description{
+    font-size: .75em;
+    font-weight: lighter;
+}
+
