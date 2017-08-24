@@ -136,7 +136,7 @@ specials-header {
 
 .menu{
     width: 100vw;
-    /*height: 100vh;*/
+    height: 140vh;
     background: rgba(204, 204, 204, 0.85);
     z-index: 1;
     position: absolute;
@@ -152,6 +152,7 @@ specials-header {
     text-align: center;
     font-size: 2.5em;
     margin-top: 15px;
+    color: purple;
 }
 
 .menu h2{
@@ -161,6 +162,7 @@ specials-header {
     line-height: 40px;
     font-size: 2em;
     border-bottom: solid white 1px;
+    color: purple;
 }
 
 
