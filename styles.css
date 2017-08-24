@@ -138,7 +138,7 @@ specials-header {
     height: 100vh;
     background: rgba(204, 204, 204, 0.85);
     z-index: 1;
-    margin-top: -667px;
+    margin-top: -100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -150,6 +150,7 @@ specials-header {
     text-align: center;
     font-size: 2.5em;
     color: purple;
+    margin-top: 15px;
 }
 
 .menu h2{
