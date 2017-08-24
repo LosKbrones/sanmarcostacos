@@ -139,7 +139,7 @@ specials-header {
     height: 140vh;
     background: rgba(204, 204, 204, 0.85);
     z-index: 1;
-    position: absolute;
+    /*position: absolute;*/
     margin-top: -667px;
     display: flex;
     flex-direction: column;
@@ -195,5 +195,11 @@ specials-header {
 #ind-item-text description{
     font-size: .75em;
     font-weight: lighter;
+}
+
+.location-page{
+    background-color: white;
+    width: 100vw;
+    height: 100vh;
 }
 
