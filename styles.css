@@ -202,3 +202,23 @@ specials-header {
     font-size: .75em;
 }
 
+@media (min-width: 668px){
+    .landing-page{
+        background-size: cover;
+        height: 100vh;
+    }
+
+    .title-main-display{
+        height: 40vh;
+    }
+
+    .title-main-display span{
+    font-weight: 100;
+    font-size: 7em;
+}
+
+    menu-bar-main{
+    height: 30vh;
+    font-size: 3em;
+}
+}
