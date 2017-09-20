@@ -61,17 +61,13 @@ specials-header {
 }
 
 .weekly-specials {
-    /*background: linear-gradient(#121312, black);*/
-    height: 24em;
     height: 65vh;
-    /*background-image: url('http://www.periodicolasala.com/wp-content/uploads/2016/04/feria-nacional-de-san-marcos-aguascalientes-2016_0-586x600.jpg');*/
     background-repeat: no-repeat;
     background-size: contain;
     
 }
 
 .layer{
-    /*background-color: black;*/
     opacity: .95;
     height: 100%;
     display: flex;
@@ -124,7 +120,6 @@ specials-header {
 }
 
 .menu{
-    
     width: 100vw;
     height: 100vh;
     background: rgba(204, 204, 204, 0.85);
@@ -221,4 +216,26 @@ specials-header {
     height: 30vh;
     font-size: 3em;
 }
+
+.weekly-specials {
+    height: 75vh;
+}
+
+specials-header {
+    font-size: 4.25em;
+}
+
+.layer {
+    display: flex;
+    justify-content: space-around;
+}
+.menu-image{
+    background-size: cover;
+}
+    .weekly-specials {
+    height: 100vh;
+}
+    .weekly-specials img{
+        height: 18vh;
+    }
 }
