@@ -56,7 +56,6 @@ specials-header {
     display: flex;
     justify-content: center;
     font-size: 1.25em;
-   
     margin: 8px;
 }
 
@@ -218,11 +217,16 @@ specials-header {
 }
 
 .weekly-specials {
-    height: 75vh;
+    height: 100vh;
 }
 
 specials-header {
     font-size: 4.25em;
+    background-color: purple;
+    color: white;
+    width: 100vw;
+    height: 10vh;
+    align-items: center;
 }
 
 .layer {
@@ -231,9 +235,6 @@ specials-header {
 }
 .menu-image{
     background-size: cover;
-}
-    .weekly-specials {
-    height: 100vh;
 }
     .weekly-specials img{
         height: 18vh;
