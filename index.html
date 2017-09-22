@@ -12,52 +12,49 @@
 
 <body>
     <div class='landing-page'>
-        <!--<video autoplay loop class="video-background" muted plays-inline>
-            <source src="./images/background.mp4" type="video/mp4">
-        </video>-->
-
         <div class='title-main-display'>
             <menu-bar-main>
-                <a href='#'>Menu</a>
-                <a href='#'>Specials</a>
-                <a href='#'>Location</a>
-                <a href='#'>Contact Us</a>
+                <a href='#menu'>menu</a>
+                <a href='#specials'>specials</a>
+                <a href='#location'>location</a>
+                <a href='#contact'>contact</a>
             </menu-bar-main>
-            <span>Taqueria San Marcos</span>
+            <span class="title">Taqueria San Marcos</span>
         </div>
     </div>
-    <specials-header>Weekly Specials</specials-header>
-    <div class='weekly-specials'>
-        <div class='layer'>
-            <special1>
-                <img src="./images/various-tacos.jpg" alt="">
-                <div>
-                    <h4>Taco Tuesday</h4>
-                    <span>$.99 taco</span>
-                </div>
-            </special1>
-            <special2>
-                <div>
-                    <h4>Enchilada Thursday</h4>
-                    <span>$6.99</span>
-                </div>
-                <img src="./images/enchiladas.jpg" alt="">
-            </special2>
-            <special3>
-                <img src="./images/menudo.jpg" alt="">
-                <div>
-                    <h4>Menudo Saturday</h4>
-                    <span>$5.99</span>
-                </div>
-            </special3>
+    <a id="specials">
+    <div class="specials-container">
+        <specials-header>Weekly Specials</specials-header>
+        <div class='weekly-specials'>
+            <div class='layer'>
+                <special1>
+                    <img src="./images/various-tacos.jpg" alt="">
+                    <div>
+                        <h4>Taco Tuesday</h4>
+                        <span>$.99 tacos</span>
+                    </div>
+                </special1>
+                <special2>
+                    <div>
+                        <h4>Enchilada Thursday</h4>
+                        <span>$6.99</span>
+                    </div>
+                    <img src="./images/enchiladas.jpg" alt="">
+                </special2>
+                <special3>
+                    <img src="./images/menudo.jpg" alt="">
+                    <div>
+                        <h4>Menudo Saturday</h4>
+                        <span>$5.99</span>
+                    </div>
+                </special3>
+            </div>
         </div>
     </div>
-    <div class="about">
-        <!--<img src="./images/chef.jpg" alt="">-->
-
-    </div>
+    </a>
     <div class='menu-image'>
     </div>
+    <a id="menu">
     <div class='menu'>
         <h1>Menu</h1>
         <div id='menu-items'>
@@ -142,13 +139,17 @@
             </li>
         </div>
     </div>
+    </a>
+    <a id="location">
     <div class='location-page'>
         <div class='contact'>
             <span>491 S Freedom Blvd #104, Provo, UT 84601</span>
             <span>385.207.3692</span>
-            <span>Daily 10:30 am - 10:00 pm except Sunday</span>
+            <span>Daily 10:30 am - 10:00 pm Except Sunday</span>
         </div>
     </div>
+    </a>
+    <a id="contact"></a>
 </body>
 
 </html>

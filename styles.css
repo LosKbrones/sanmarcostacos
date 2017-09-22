@@ -1,8 +1,8 @@
-
-body{
+body {
     font-variant: small-caps;
     font-family: serif;
 }
+
 .landing-page {
     width: 100vw;
     height: 38vh;
@@ -11,11 +11,6 @@ body{
     background-repeat: no-repeat;
     background-size: contain;
 }
-
-/*.video-background{
-        width: 100%;
-        z-index: -100;
-}*/
 
 .title-main-display {
     width: 100%;
@@ -26,22 +21,24 @@ body{
     flex-direction: column;
     font-variant: small-caps;
     font-family: serif;
-    font-style: oblique;
+    /*font-style: oblique;*/
 }
 
-menu-bar-main{
+menu-bar-main {
+    background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
     height: 10vh;
     display: flex;
     justify-content: space-around;
     font-size: 1em;
 }
 
-.title-main-display a:link{
-    color: white;
+.title-main-display a {
+    letter-spacing: 0.1em;
+    color: white !important;
     text-decoration: none;
 }
 
-.title-main-display span{
+.title-main-display span {
     font-weight: 100;
     font-size: 2em;
 }
@@ -50,6 +47,10 @@ menu-bar-main{
     width: 5vw;
     height: auto;
     color: white;
+}
+
+.title {
+    letter-spacing: 0.1em
 }
 
 specials-header {
@@ -63,10 +64,9 @@ specials-header {
     height: 65vh;
     background-repeat: no-repeat;
     background-size: contain;
-    
 }
 
-.layer{
+.layer {
     opacity: .95;
     height: 100%;
     display: flex;
@@ -74,7 +74,11 @@ specials-header {
     justify-content: space-around;
 }
 
-.weekly-specials img{
+.specials-container {
+    margin: 0 0 3% 0;
+}
+
+.weekly-specials img {
     height: 18vh;
     border-radius: 50%;
     opacity: 1;
@@ -84,7 +88,10 @@ specials-header {
     /*width: 33vw;*/
     /*border: solid white 1px;*/
 }
-.weekly-specials special1, special2, special3 {
+
+.weekly-specials special1,
+special2,
+special3 {
     display: flex;
     justify-content: space-around;
 }
@@ -98,27 +105,19 @@ specials-header {
     text-align: center;
 }
 
-.about{
-    background-image: url('./images/chef.jpg');
-    background-attachment: fixed;
-}
-
-.about img{
-    width: 100%;
-}
-
-.menu-image{
+.menu-image {
     text-align: center;
     width: 100vw;
     height: 100vh;
-    background-image: url('http://www.periodicolasala.com/wp-content/uploads/2016/04/feria-nacional-de-san-marcos-aguascalientes-2016_0-586x600.jpg');
+    background-image: url('./images/toro.png');
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     background-attachment: fixed;
+    background-position: center;
     z-index: 0;
 }
 
-.menu{
+.menu {
     width: 100vw;
     height: 100vh;
     background: rgba(204, 204, 204, 0.85);
@@ -131,14 +130,14 @@ specials-header {
     color: white;
 }
 
-.menu h1{
+.menu h1 {
     text-align: center;
     font-size: 2.5em;
     color: green;
     margin-top: 15px;
 }
 
-.menu h2{
+.menu h2 {
     margin-right: 0;
     line-height: 45px;
     display: flex;
@@ -147,8 +146,8 @@ specials-header {
     color: purple;
 }
 
-#menu-items{
-    width: 90vw;
+#menu-items {
+    margin: 0 6% 0 6%;
     height: 89vh;
     display: flex;
     flex-direction: column;
@@ -156,37 +155,34 @@ specials-header {
     font-size: 1em;
 }
 
-#menu-items span{
+#menu-items span {
     font-weight: 200;
 }
 
-#menu-items h3{
-    font-size: 1.25em;
-}
-
-#menu-items li{
+#menu-items li {
     list-style: none;
     display: flex;
     justify-content: space-between;
 }
 
-#ind-item-text{
+#ind-item-text {
     margin-right: 15px;
 }
 
-#ind-item-text description{
+#ind-item-text description {
     font-size: .75em;
     font-weight: lighter !important;
 }
 
-.location-page{
+.location-page {
     background-color: purple;
     width: 100vw;
     height: 30vh;
     color: white;
 }
 
-.contact{
+.contact {
+    margin-left: 6%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -196,47 +192,79 @@ specials-header {
     font-size: .75em;
 }
 
-@media (min-width: 668px){
-    .landing-page{
+@media (min-width: 668px) {
+    .landing-page {
         background-size: cover;
         height: 100vh;
     }
-
-    .title-main-display{
+    .title-main-display {
         height: 40vh;
     }
-
-    .title-main-display span{
-    font-weight: 100;
-    font-size: 7em;
-}
-
-    menu-bar-main{
-    height: 30vh;
-    font-size: 3em;
-}
-
-.weekly-specials {
-    height: 100vh;
-}
-
-specials-header {
-    font-size: 4.25em;
-    background-color: purple;
-    color: white;
-    width: 100vw;
-    height: 10vh;
-    align-items: center;
-}
-
-.layer {
-    display: flex;
-    justify-content: space-around;
-}
-.menu-image{
-    background-size: cover;
-}
-    .weekly-specials img{
-        height: 18vh;
+    .title-main-display span {
+        font-weight: 100;
+        font-size: 5em;
+    }
+    menu-bar-main {
+        height: 30vh;
+        font-size: 3em;
+    }
+    #menu-items span {
+        font-size: 1.25em;
+        letter-spacing: 0.05em;
+    }
+    #ind-item-text description {
+        font-size: 1em;
+    }
+    .weekly-specials {
+        letter-spacing: 0.1em;
+        height: 100vh;
+    }
+    specials-header {
+        letter-spacing: 0.2em;
+        font-size: 4.25em;
+        /*background-color: purple;*/
+        /*color: white;*/
+        width: 100vw;
+        height: 10vh;
+        align-items: center;
+    }
+    .layer {
+        display: flex;
+        justify-content: space-around;
+    }
+    .menu-image {
+        background-size: 72%;
+    }
+    .weekly-specials img {
+        height: 33vh;
+    }
+    .contact {
+        font-size: 1.25em;
+    }
+    .weekly-specials div {
+        margin: 7% 0 7% 0;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+    .weekly-specials h4 {
+        font-size: 200%;
+    }
+    .weekly-specials span {
+        font-size: 400%;
+    }
+    .contact {
+        letter-spacing: 0.02em;
+        margin: 0;
+        flex-direction: row;
+        width: 100vw;
+        height: 100%;
+    }
+    .contact span{
+        margin-top: 0.8em;
+    }
+    .location-page {
+        height: 6vh;
+        border-top: solid 1px white;
     }
 }
