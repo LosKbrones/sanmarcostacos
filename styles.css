@@ -135,6 +135,7 @@ special3 {
     font-size: 2.5em;
     color: green;
     margin-top: 15px;
+    letter-spacing: 0.1em;
 }
 
 .menu h2 {
@@ -144,6 +145,7 @@ special3 {
     font-size: 2em;
     border-bottom: solid white 1px;
     color: purple;
+    letter-spacing: 0.1em;
 }
 
 #menu-items {
@@ -157,6 +159,7 @@ special3 {
 
 #menu-items span {
     font-weight: 200;
+    letter-spacing: 0.05em;
 }
 
 #menu-items li {
@@ -170,6 +173,7 @@ special3 {
 }
 
 #ind-item-text description {
+    letter-spacing: 0.05em;
     font-size: .75em;
     font-weight: lighter !important;
 }
@@ -177,20 +181,30 @@ special3 {
 .location-page {
     background-color: purple;
     width: 100vw;
-    height: 30vh;
+    /*height: 30vh;*/
     color: white;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 11vh;
 }
-
 .contact {
     margin-left: 6%;
     display: flex;
-    flex-direction: column;
     justify-content: space-around;
-    width: 25vw;
-    height: 30vh;
+    
     font-weight: 100;
     font-size: .75em;
+    letter-spacing: 0.02em;
+    margin: 0;
+    flex-direction: row;
+    width: 100vw;
 }
+.contact span{
+    width: 20%;
+}
+
+/*for larger screens*/
 
 @media (min-width: 668px) {
     .landing-page {
@@ -222,8 +236,6 @@ special3 {
     specials-header {
         letter-spacing: 0.2em;
         font-size: 4.25em;
-        /*background-color: purple;*/
-        /*color: white;*/
         width: 100vw;
         height: 10vh;
         align-items: center;
@@ -238,9 +250,6 @@ special3 {
     .weekly-specials img {
         height: 33vh;
     }
-    .contact {
-        font-size: 1.25em;
-    }
     .weekly-specials div {
         margin: 7% 0 7% 0;
         display: flex;
@@ -254,13 +263,14 @@ special3 {
         font-size: 400%;
     }
     .contact {
+        font-size: 1.25em;
         letter-spacing: 0.02em;
         margin: 0;
         flex-direction: row;
         width: 100vw;
         height: 100%;
     }
-    .contact span{
+    .contact span {
         margin-top: 0.8em;
     }
     .location-page {
