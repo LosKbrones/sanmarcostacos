@@ -213,9 +213,9 @@ special3 {
         background-size: cover;
         height: 100vh;
     }
-    .title-main-display {
-        /*height: 100vh;*/
-    }
+    /*.title-main-display {
+        height: 100vh;
+    }*/
     .title-main-display span {
         font-weight: 100;
         font-size: 7em;
