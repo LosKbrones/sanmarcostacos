@@ -13,8 +13,9 @@ body {
 }
 
 .title-main-display {
+    background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
     width: 100%;
-    height: 15vh;
+    height: 100%;
     color: white;
     text-align: center;
     display: flex;
@@ -25,7 +26,6 @@ body {
 }
 
 menu-bar-main {
-    background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
     height: 10vh;
     display: flex;
     justify-content: space-around;
@@ -52,7 +52,9 @@ menu-bar-main {
 .title {
     letter-spacing: 0.1em
 }
-
+.specials-container {
+    margin: 0 0 3% 0;
+}
 specials-header {
     display: flex;
     justify-content: center;
@@ -64,6 +66,8 @@ specials-header {
     height: 65vh;
     background-repeat: no-repeat;
     background-size: contain;
+    width: 88vw;
+    margin: 0 auto;
 }
 
 .layer {
@@ -74,9 +78,6 @@ specials-header {
     justify-content: space-around;
 }
 
-.specials-container {
-    margin: 0 0 3% 0;
-}
 
 .weekly-specials img {
     height: 18vh;
@@ -94,6 +95,9 @@ special2,
 special3 {
     display: flex;
     justify-content: space-around;
+    border-bottom: black 1px solid;
+    padding-bottom: 4em;
+
 }
 
 .weekly-specials h4 {
@@ -191,13 +195,11 @@ special3 {
 .contact {
     margin-left: 6%;
     display: flex;
-    justify-content: space-around;
-    
+    justify-content: space-evenly;
     font-weight: 100;
     font-size: .75em;
     letter-spacing: 0.02em;
     margin: 0;
-    flex-direction: row;
     width: 100vw;
 }
 .contact span{
@@ -212,11 +214,14 @@ special3 {
         height: 100vh;
     }
     .title-main-display {
-        height: 40vh;
+        /*height: 100vh;*/
     }
     .title-main-display span {
         font-weight: 100;
-        font-size: 5em;
+        font-size: 7em;
+    }
+    .title{
+        letter-spacing: 0.12em;
     }
     menu-bar-main {
         height: 30vh;
@@ -263,15 +268,15 @@ special3 {
         font-size: 400%;
     }
     .contact {
-        font-size: 1.25em;
+        font-size: .95em;
         letter-spacing: 0.02em;
         margin: 0;
-        flex-direction: row;
         width: 100vw;
         height: 100%;
     }
     .contact span {
         margin-top: 0.8em;
+
     }
     .location-page {
         height: 6vh;
