@@ -175,7 +175,7 @@ special3 {
 #ind-item-text description {
     letter-spacing: 0.05em;
     font-size: .75em;
-    font-weight: lighter !important;
+    font-weight: lighter;
 }
 
 .location-page {
@@ -223,11 +223,17 @@ special3 {
         font-size: 3em;
     }
     #menu-items span {
-        font-size: 1.25em;
+        font-size: 1.50em;
         letter-spacing: 0.05em;
     }
     #ind-item-text description {
-        font-size: 1em;
+        font-size: 1.5em;
+    }
+    item-name{
+        font-size: 1.75em;
+    }
+    price{
+        font-size: 1.5em;
     }
     .weekly-specials {
         letter-spacing: 0.1em;
