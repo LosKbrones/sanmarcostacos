@@ -282,6 +282,24 @@ menu-bar-main {
         height: 30vh;
         font-size: 3em;
     }
+
+#menu-items{
+    width: 89vw;
+    height: 100vh;
+}
+
+#menu-items li {
+    font-size: 1.75em;
+}
+
+item-name {
+    font-size: 1.5em;
+}
+
+price {
+    font-size: 1.25em;
+}
+
 #menu-items span {
         font-size: 1.25em;
         letter-spacing: 0.05em;
