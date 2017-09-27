@@ -3,7 +3,12 @@ body {
     font-family: serif;
     overflow-x: hidden;
 }
-
+.main-wrapper{
+    overflow: hidden;
+    width:100vw;
+    height:38vh;
+    position: relative;
+}
 .landing-page {
     width: 100vw;
     height: 38vh;
@@ -11,6 +16,8 @@ body {
     background-image: url("https://www.chowstatic.com/assets/recipe_photos/29554_tacos_al_pastor.jpg");
     background-repeat: no-repeat;
     background-size: contain;
+    position: absolute;
+    z-index: 1;
 }
 
 .title-main-display {
@@ -23,6 +30,8 @@ body {
     flex-direction: column;
     font-variant: small-caps;
     font-family: serif;
+    position: absolute;
+    z-index: 2;
 }
 
 menu-bar-main {
@@ -34,7 +43,7 @@ menu-bar-main {
 
 .title-main-display a {
     letter-spacing: 0.1em;
-    color: white !important;
+    color: white;
     text-decoration: none;
 }
 
@@ -60,6 +69,17 @@ specials-header {
     justify-content: center;
     font-size: 1.25em;
     margin: 8px;
+}
+
+main-header-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 25vh;
+}
+
+#phone {
+    font-size: 1em;
 }
 
 .weekly-specials {
@@ -95,7 +115,6 @@ special2,
 special3 {
     display: flex;
     justify-content: space-around;
-    border-bottom: black 1px solid;
     padding-bottom: 4em;
 
 }
@@ -229,7 +248,6 @@ special3 {
   background-size: cover;
   background-attachment: fixed;
   background-repeat: repeat;
-  position: relative;
   animation: zoomin 120s ease-in infinite;
   transition: all .5s ease-in-out;
   overflow: hidden;
@@ -238,7 +256,7 @@ special3 {
 }
 
 
-/* The innermost element*/
+
 .title-main-display {
   width:100vw;
   height:100vh;
@@ -246,69 +264,89 @@ special3 {
   z-index: 999;
 }
     
-    .title-main-display span {
+.title-main-display span {
         font-weight: 100;
         font-size: 7em;
     }
-    .title{
+.title{
         letter-spacing: 0.12em;
     }
-    menu-bar-main {
+main-header-text {
+    height: 65vh;
+}
+#phone{
+    font-size: 3em;
+
+}
+menu-bar-main {
         height: 30vh;
         font-size: 3em;
     }
-    #menu-items span {
+#menu-items span {
         font-size: 1.25em;
         letter-spacing: 0.05em;
     }
-    #ind-item-text description {
+#ind-item-text description {
         font-size: 1em;
     }
-    .weekly-specials {
+.weekly-specials {
         letter-spacing: 0.1em;
         height: 100vh;
     }
-    specials-header {
+specials-header {
         letter-spacing: 0.2em;
         font-size: 4.25em;
         width: 100vw;
         height: 10vh;
         align-items: center;
     }
-    .layer {
+.layer {
         display: flex;
         justify-content: space-around;
     }
-    .menu-image {
+.menu-image {
         background-size: 72%;
     }
-    .weekly-specials img {
+.weekly-specials img {
         height: 33vh;
+        margin: 2vw;
     }
-    .weekly-specials div {
+.weekly-specials div {
         margin: 7% 0 7% 0;
         display: flex;
         justify-content: space-around;
         flex-direction: column;
     }
-    .weekly-specials h4 {
+.weekly-specials h4 {
         font-size: 200%;
     }
-    .weekly-specials span {
+.weekly-specials span {
         font-size: 400%;
     }
-    .contact {
+.weekly-specials special1,
+special2,
+special3{
+    width: 85vw;
+
+}
+
+.line{
+    border-top: solid green 3px;
+    width: 54vw;
+    z-index: 1;
+}
+.contact {
         font-size: .95em;
         letter-spacing: 0.02em;
         margin: 0;
         width: 100vw;
         height: 100%;
     }
-    .contact span {
+.contact span {
         margin-top: 0.8em;
 
     }
-    .location-page {
+.location-page {
         height: 6vh;
         border-top: solid 1px white;
     }
