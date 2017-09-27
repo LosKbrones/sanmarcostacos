@@ -1,8 +1,16 @@
-
-body{
+body {
     font-variant: small-caps;
     font-family: serif;
+    overflow-x: hidden;
 }
+
+.main-wrapper {
+    overflow: hidden;
+    width: 100vw;
+    height: 38vh;
+    position: relative;
+}
+
 .landing-page {
     width: 100vw;
     height: 38vh;
@@ -10,38 +18,41 @@ body{
     background-image: url("https://www.chowstatic.com/assets/recipe_photos/29554_tacos_al_pastor.jpg");
     background-repeat: no-repeat;
     background-size: contain;
+    position: absolute;
+    z-index: 1;
 }
 
-/*.video-background{
-        width: 100%;
-        z-index: -100;
-}*/
-
 .title-main-display {
+    background: -webkit-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+    background: -moz-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+    background: -o-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
     width: 100%;
-    height: 15vh;
+    height: 100%;
     color: white;
     text-align: center;
     display: flex;
     flex-direction: column;
     font-variant: small-caps;
     font-family: serif;
-    font-style: oblique;
+    position: absolute;
+    z-index: 2;
 }
 
-menu-bar-main{
+menu-bar-main {
     height: 10vh;
     display: flex;
     justify-content: space-around;
     font-size: 1em;
 }
 
-.title-main-display a:link{
+.title-main-display a {
+    letter-spacing: 0.1em;
     color: white;
     text-decoration: none;
 }
 
-.title-main-display span{
+.title-main-display span {
     font-weight: 100;
     font-size: 2em;
 }
@@ -52,6 +63,14 @@ menu-bar-main{
     color: white;
 }
 
+.title {
+    letter-spacing: 0.1em
+}
+
+.specials-container {
+    margin: 0 0 3% 0;
+}
+
 specials-header {
     display: flex;
     justify-content: center;
@@ -59,14 +78,26 @@ specials-header {
     margin: 8px;
 }
 
+main-header-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 25vh;
+}
+
+#phone {
+    font-size: 1em;
+}
+
 .weekly-specials {
     height: 65vh;
     background-repeat: no-repeat;
     background-size: contain;
-    
+    width: 88vw;
+    margin: 0 auto;
 }
 
-.layer{
+.layer {
     opacity: .95;
     height: 100%;
     display: flex;
@@ -74,19 +105,18 @@ specials-header {
     justify-content: space-around;
 }
 
-.weekly-specials img{
+.weekly-specials img {
     height: 18vh;
     border-radius: 50%;
     opacity: 1;
-    /*background-image: url('https://cdn.kiwilimon.com/recetaimagen/28854/thumb400x300-29980.jpg');*/
-    /*background-repeat: no-repeat;
-    background-size: cover;*/
-    /*width: 33vw;*/
-    /*border: solid white 1px;*/
 }
-.weekly-specials special1, special2, special3 {
+
+.weekly-specials special1,
+special2,
+special3 {
     display: flex;
     justify-content: space-around;
+    padding-bottom: 4em;
 }
 
 .weekly-specials h4 {
@@ -98,30 +128,22 @@ specials-header {
     text-align: center;
 }
 
-.about{
-    background-image: url('./images/chef.jpg');
-    background-attachment: fixed;
-}
-
-.about img{
-    width: 100%;
-}
-
-.menu-image{
+.menu-image {
+    background-image: url('./images/toro.png');
     text-align: center;
     width: 100vw;
     height: 100vh;
-    background-image: url('http://www.periodicolasala.com/wp-content/uploads/2016/04/feria-nacional-de-san-marcos-aguascalientes-2016_0-586x600.jpg');
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: 100%;
     background-attachment: fixed;
+    background-position: center;
     z-index: 0;
 }
 
-.menu{
+.menu {
     width: 100vw;
     height: 100vh;
-    background: rgba(204, 204, 204, 0.85);
+    background: rgba(180, 180, 180, 0.85);
     z-index: 1;
     margin-top: -100vh;
     display: flex;
@@ -131,24 +153,30 @@ specials-header {
     color: white;
 }
 
-.menu h1{
-    text-align: center;
+.menu h1 {
+    /*text-align: center;
     font-size: 2.5em;
     color: green;
-    margin-top: 15px;
+    margin-top: 15px;*/
+    letter-spacing: 0.2em;
+    display: flex;
+    justify-content: center;
+    font-size: 1.25em;
+    margin: 8px;
 }
 
-.menu h2{
+.menu h2 {
     margin-right: 0;
     line-height: 45px;
     display: flex;
     font-size: 2em;
     border-bottom: solid white 1px;
     color: purple;
+    letter-spacing: 0.1em;
 }
 
-#menu-items{
-    width: 90vw;
+#menu-items {
+    margin: 0 6% 1% 6%;
     height: 89vh;
     display: flex;
     flex-direction: column;
@@ -156,87 +184,202 @@ specials-header {
     font-size: 1em;
 }
 
-#menu-items span{
+#menu-items span {
     font-weight: 200;
+    letter-spacing: 0.05em;
 }
 
-#menu-items h3{
-    font-size: 1.25em;
-}
-
-#menu-items li{
+#menu-items li {
     list-style: none;
     display: flex;
     justify-content: space-between;
 }
 
-#ind-item-text{
+#ind-item-text {
     margin-right: 15px;
 }
 
-#ind-item-text description{
+#ind-item-text description {
     font-size: .75em;
-    font-weight: lighter !important;
+    font-weight: lighter;
 }
 
-.location-page{
+.location-page {
+    background: -webkit-linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
+    background: -moz-linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
+    background: -o-linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
     background-color: purple;
     width: 100vw;
-    height: 30vh;
     color: white;
+    display: flex;
+    justify-content: space-around;
+    height: 7vh;
 }
 
-.contact{
+.contact {
+    text-align: center;
+    margin-left: 6%;
     display: flex;
-    flex-direction: column;
     justify-content: space-around;
-    width: 25vw;
-    height: 30vh;
+    flex-direction: column;
     font-weight: 100;
     font-size: .75em;
+    letter-spacing: 0.02em;
+    margin: 0;
+    width: 89vw;
 }
 
-@media (min-width: 668px){
-    .landing-page{
+
+/*.contact span{
+    width: 20%;
+}*/
+
+
+/*for larger screens*/
+
+@media (min-width: 668px) {
+    @keyframes zoomin {
+        0% {
+            transform: scale(1);
+        }
+        50% {
+            transform: scale(1.5);
+        }
+        100% {
+            transform: scale(1);
+        }
+    }
+    .main-wrapper {
+        overflow: hidden;
+        width: 100vw;
+        height: 100vh;
+        position: relative;
+    }
+    .landing-page {
+        width: 100vw;
+        height: 100vh;
+        text-align: center;
         background-size: cover;
+        background-attachment: fixed;
+        background-repeat: repeat;
+        animation: zoomin 120s ease-in infinite;
+        transition: all .5s ease-in-out;
+        overflow: hidden;
+        z-index: 1;
+        position: absolute;
+    }
+    .title-main-display {
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        z-index: 999;
+        background: -webkit-linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+        background: -moz-linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+        background: -o-linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+        background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+    }
+    .title-main-display span {
+        font-weight: 100;
+        font-size: 7em;
+    }
+    .title {
+        letter-spacing: 0.12em;
+    }
+    main-header-text {
+        height: 65vh;
+    }
+    #phone {
+        font-size: 3em;
+    }
+    menu-bar-main {
+        height: 30vh;
+        font-size: 3em;
+    }
+    #menu-items {
+        width: 85vw;
         height: 100vh;
     }
-
-    .title-main-display{
-        height: 40vh;
+    #menu-items li {
+        font-size: 1.75em;
     }
-
-    .title-main-display span{
-    font-weight: 100;
-    font-size: 7em;
-}
-
-    menu-bar-main{
-    height: 30vh;
-    font-size: 3em;
-}
-
-.weekly-specials {
-    height: 100vh;
-}
-
-specials-header {
-    font-size: 4.25em;
-    background-color: purple;
-    color: white;
-    width: 100vw;
-    height: 10vh;
-    align-items: center;
-}
-
-.layer {
-    display: flex;
-    justify-content: space-around;
-}
-.menu-image{
-    background-size: cover;
-}
-    .weekly-specials img{
-        height: 18vh;
+    item-name {
+        font-size: 1.5em;
+    }
+    price {
+        font-size: 1.25em;
+    }
+    #menu-items span {
+        font-size: 1.25em;
+        letter-spacing: 0.05em;
+    }
+    #ind-item-text description {
+        font-size: 0.8em;
+    }
+    .weekly-specials {
+        letter-spacing: 0.1em;
+        height: 100vh;
+    }
+    specials-header {
+        letter-spacing: 0.2em;
+        font-size: 4.25em;
+        width: 100vw;
+        height: 10vh;
+        align-items: center;
+    }
+    .layer {
+        display: flex;
+        justify-content: space-around;
+    }
+    .weekly-specials img {
+        height: 35vh;
+        /*margin: 2vw;*/
+    }
+    .weekly-specials div {
+        margin: 7% 0 7% 0;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    .weekly-specials h4 {
+        font-size: 200%;
+    }
+    .weekly-specials span {
+        font-size: 400%;
+    }
+    .weekly-specials special1,
+    special2,
+    special3 {
+        width: 85vw;
+    }
+    .menu-image {
+        background-size: 72%;
+    }
+    .menu h1 {
+        letter-spacing: 0.2em;
+        font-size: 4.25em;
+        width: 100vw;
+        height: 10vh;
+        align-items: center;
+    }
+    .line {
+        border-top: solid whitesmoke 3px;
+        width: 54vw;
+        z-index: 1;
+    }
+    .contact {
+        font-size: .95em;
+        letter-spacing: 0.02em;
+        margin: 0;
+        width: 85vw;
+        height: 100%;
+        flex-direction: row;
+    }
+    .contact span {
+        margin-top: 0.8em;
+    }
+    .location-page {
+        height: 6vh;
+        border-top: solid 1px white;
     }
 }
