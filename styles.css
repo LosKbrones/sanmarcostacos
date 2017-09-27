@@ -129,10 +129,10 @@ special3 {
 }
 
 .menu-image {
+    background-image: url('./images/toro.png');
     text-align: center;
     width: 100vw;
     height: 100vh;
-    background-image: url('./images/toro.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -143,7 +143,7 @@ special3 {
 .menu {
     width: 100vw;
     height: 100vh;
-    background: rgba(204, 204, 204, 0.85);
+    background: rgba(180, 180, 180, 0.85);
     z-index: 1;
     margin-top: -100vh;
     display: flex;
@@ -176,7 +176,7 @@ special3 {
 }
 
 #menu-items {
-    margin: 0 6% 0 6%;
+    margin: 0 6% 1% 6%;
     height: 89vh;
     display: flex;
     flex-direction: column;
@@ -221,7 +221,7 @@ special3 {
 .contact {
     margin-left: 6%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     font-weight: 100;
     font-size: .75em;
     letter-spacing: 0.02em;
@@ -233,6 +233,17 @@ special3 {
 /*.contact span{
     width: 20%;
 }*/
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*for larger screens*/
@@ -330,9 +341,6 @@ special3 {
         display: flex;
         justify-content: space-around;
     }
-    .menu-image {
-        background-size: 72%;
-    }
     .weekly-specials img {
         height: 35vh;
         /*margin: 2vw;*/
@@ -354,6 +362,16 @@ special3 {
     special3 {
         width: 85vw;
     }
+    .menu-image {
+        background-size: 72%;
+    }
+    .menu h1 {
+        letter-spacing: 0.2em;
+        font-size: 4.25em;
+        width: 100vw;
+        height: 10vh;
+        align-items: center;
+    }
     .line {
         border-top: solid whitesmoke 3px;
         width: 54vw;
@@ -363,7 +381,7 @@ special3 {
         font-size: .95em;
         letter-spacing: 0.02em;
         margin: 0;
-        width: 100vw;
+        width: 85vw;
         height: 100%;
     }
     .contact span {
