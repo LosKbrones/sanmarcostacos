@@ -1,6 +1,7 @@
 body {
     font-variant: small-caps;
     font-family: serif;
+    overflow-x: hidden;
 }
 
 .landing-page {
@@ -22,7 +23,6 @@ body {
     flex-direction: column;
     font-variant: small-caps;
     font-family: serif;
-    /*font-style: oblique;*/
 }
 
 menu-bar-main {
@@ -179,7 +179,7 @@ special3 {
 #ind-item-text description {
     letter-spacing: 0.05em;
     font-size: .75em;
-    font-weight: lighter !important;
+    font-weight: lighter;
 }
 
 .location-page {
@@ -209,13 +209,43 @@ special3 {
 /*for larger screens*/
 
 @media (min-width: 668px) {
-    .landing-page {
-        background-size: cover;
-        height: 100vh;
-    }
-    /*.title-main-display {
-        height: 100vh;
-    }*/
+
+@keyframes zoomin {
+  0% {transform: scale(1);}
+  50% {transform: scale(1.5);}
+  100% {transform: scale(1);}
+}
+.main-wrapper {
+  overflow: hidden;
+  width:100vw;
+  height:100vh;
+  position: relative;
+}
+
+.landing-page {
+  width:100vw;
+  height:100vh;
+  text-align:center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: repeat;
+  position: relative;
+  animation: zoomin 120s ease-in infinite;
+  transition: all .5s ease-in-out;
+  overflow: hidden;
+  z-index: 1;
+  position: absolute;
+}
+
+
+/* The innermost element*/
+.title-main-display {
+  width:100vw;
+  height:100vh;
+  position: absolute;
+  z-index: 999;
+}
+    
     .title-main-display span {
         font-weight: 100;
         font-size: 7em;
