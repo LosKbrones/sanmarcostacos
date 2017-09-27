@@ -337,15 +337,13 @@ specials-header {
     }
 .weekly-specials h4 {
         font-size: 200%;
+        
     }
 .weekly-specials span {
         font-size: 400%;
     }
-.weekly-specials special1,
-special2,
-special3{
+.weekly-specials special1, special2, special3{
     width: 85vw;
-
 }
 
 .line{
