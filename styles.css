@@ -103,11 +103,6 @@ main-header-text{
     height: 18vh;
     border-radius: 50%;
     opacity: 1;
-    /*background-image: url('https://cdn.kiwilimon.com/recetaimagen/28854/thumb400x300-29980.jpg');*/
-    /*background-repeat: no-repeat;
-    background-size: cover;*/
-    /*width: 33vw;*/
-    /*border: solid white 1px;*/
 }
 
 .weekly-specials special1,
@@ -347,7 +342,7 @@ specials-header {
 }
 
 .line{
-    border-top: solid green 3px;
+    border-top: solid whitesmoke 3px;
     width: 54vw;
     z-index: 1;
 }
