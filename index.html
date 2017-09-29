@@ -11,53 +11,154 @@
 </head>
 
 <body>
-    <div class='landing-page'>
-        <video autoplay loop class="video-background" muted plays-inline>
-            <source src="./images/background.mp4" type="video/mp4">
-        </video>
-                <div class='title-main-display'>
-                    <span>TAQUERIA SAN MARCOS</span>
+    <div class='main-wrapper'>
+        <div class='landing-page'>
+        </div>
+        <div class='title-main-display'>
+            <menu-bar-main>
+                <a href='#menu'>menu</a>
+                <a href='#specials'>specials</a>
+                <a href='#location'>location</a>
+                <a href='#contact'>contact</a>
+            </menu-bar-main>
+            <main-header-text>
+                <span class="title">Taqueria San Marcos</span>
+                <span id='phone'>385.207.3692</span>
+            </main-header-text>
+        </div>
+    </div>
+    <a id="specials">
+        <div class="specials-container">
+            <specials-header>Weekly Specials</specials-header>
+            <div class='weekly-specials'>
+                <div class='layer'>
+                    <special1>
+                        <img src="./images/various-tacos.jpg" alt="">
+                        <div>
+                            <h4>Taco Tuesday</h4>
+                            <span>$.99 tacos</span>
+                            <div class='line'></div>
+                        </div>
+                    </special1>
+                    <special2>
+                        <div>
+                            <h4>Enchilada Thursday</h4>
+                            <span>$6 <sup>.99</sup> </span>
+                            <div class='line'></div>
+                        </div>
+                        <img src="./images/enchiladas.jpg" alt="">
+                    </special2>
+                    <special3>
+                        <img src="./images/menudo.jpg" alt="">
+                        <div>
+                            <h4>Menudo Saturday</h4>
+                            <span>$5<sp>.99</sup></span>
+                            <div class='line'></div>
+                        </div>
+                    </special3>
                 </div>
-    </div>
-    <specials-header>Weekly Specials</specials-header>
-    <div class='weekly-specials'>
-        
-        <special1>
-            <img src="./images/various-tacos.jpg" alt="">
-           <div class="specials-text">
-                <span>Taco Tuesday</span>
-                <h4>$.99 taco</h4>
             </div>
-        </special1>
-        
-        <special2>
-            <div class="specials-text">
-                <span>Enchilada Thursday</span>
-                <h4>$6.99</h4>
-            </div>
-            <img src="./images/enchiladas.jpg" alt="">
-        </special2>
-        
-        <special3>
-            <img src="./images/menudo.jpg" alt="">
-            <div class="specials-text">
-                <span>Menudo Saturday</span>
-                <h4>$5.99</h4>
-            </div>
-        </special3>
+        </div>
+    </a>
+    <div class='menu-image'>
     </div>
-
-    <div class="about"> 
-        <!--<img src="./images/chef.jpg" alt="">-->
-            <div class="about-text">
-                about about about about about about about about about about about about about about about about about about about about about about about about 
+    <a id="menu">
+        <div class='menu'>
+            <h1>Menu</h1>
+            <div id='menu-items'>
+                <h2>Tacos</h2>
+                <li>
+                    <span>Carne Asada</span>
+                    <span>$1.50</span>
+                </li>
+                <li>
+                    <span>Chicken</span>
+                    <span>$1.50</span>
+                </li>
+                <li>
+                    <span>Birria</span>
+                    <span>$1.50</span>
+                </li>
+                <li>
+                    <span>Al Pastor</span>
+                    <span>$1.50</span></li>
+                <li>
+                    <span>Lengua</span>
+                    <span>$1.75</span>
+                </li>
+                <li>
+                    <span>Chorizo</span>
+                    <span>$1.50</span>
+                </li>
+                <li>
+                    <span>Veggie</span>
+                    <span>$1.50</span>
+                </li>
+                <h2>Quesadillas</h2>
+                <li>
+                    <span>Carne Asada</span>
+                    <span>$5.99</span>
+                </li>
+                <li>
+                    <span>Chicken</span>
+                    <span>$5.99</span>
+                </li>
+                <li>
+                    <span>Birria</span>
+                    <span>$5.99</span>
+                </li>
+                <li>
+                    <span>Al Pastor</span>
+                    <span>$5.99</span>
+                </li>
+                <li>
+                    <span>Lengua</span>
+                    <span>$6.99</span>
+                </li>
+                <li>
+                    <span>Chorizo</span>
+                    <span>$5.99</span>
+                </li>
+                <li>
+                    <span>Veggie</span>
+                    <span>$5.99</span>
+                </li>
+                <h2>Specialty Dishes</h2>
+                <li>
+                    <div id='ind-item-text'>
+                        <item-name>Nopal Taco -</item-name>
+                        <description>grilled nopal topped with carne asada, queso oaxaca, queso fresco, and fresh crema</description>
+                    </div>
+                    <price>$5.99</price>
+                </li>
+                <li>
+                    <div id='ind-item-text'>
+                        <item-name>Enchiladas -</item-name>
+                        <description>queso fresco rolled in corn tortillas, covered with tomato salsa and queso oaxaca, with chicken</description>
+                    </div>
+                    <price>$5.99</price>
+                </li>
+                <li>
+                    <div id='ind-item-text'>
+                        <item-name>Pozole -</item-name>
+                        <description>hominy, red chiles, and chicken all mixed with mexican spices in a traditional soup</description>
+                    </div>
+                    <price>$6.99</price>
+                </li>
             </div>
-        
-    </div>
-    
-    <div class='test'>
-
-    </div>
+        </div>
+    </a>
+    <a id="location">
+        <div class='location-page'>
+            <div class='contact'>
+                <span>491 S Freedom Blvd #104, Provo, UT 84601</span>
+                <span>385.207.3692</span>
+                <span>Daily 10:30 am - 10:00 pm Except Sunday</span>
+            </div>
+        </div>
+    </a>
+    <a id="contact"></a>
 </body>
+
 
 </html>

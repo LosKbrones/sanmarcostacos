@@ -1,34 +1,64 @@
+body {
+    font-variant: small-caps;
+    font-family: serif;
+    overflow-x: hidden;
+}
 
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display');
-
-body{
-    background-color: #121312;
+.main-wrapper {
+    overflow: hidden;
+    width: 100vw;
+    height: 38vh;
+    position: relative;
 }
+
 .landing-page {
+    width: 100vw;
+    height: 38vh;
+    background-attachment: fixed;
+    background-image: url("https://www.chowstatic.com/assets/recipe_photos/29554_tacos_al_pastor.jpg");
     background-repeat: no-repeat;
     background-size: contain;
-    width: 100vw;
-    max-height: 38vh;
-    background-attachment: fixed;
-}
-.video-background{
-        width: 100%;
-        z-index: -100;
+    position: absolute;
+    z-index: 1;
 }
 
 .title-main-display {
-    font-family: 'Playfair Display', serif;
-    width: 100%;;
-    position: absolute;
-    top: 14%;
+    background: -webkit-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+    background: -moz-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+    background: -o-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+    width: 100%;
+    height: 100%;
     color: white;
-    z-index: 5;
-    font-size: 3vh;
     text-align: center;
-
     /*font-family: cursive;
     font-style: oblique;*/
     /*padding-top: 10%;*/
+    display: flex;
+    flex-direction: column;
+    font-variant: small-caps;
+    font-family: serif;
+    position: absolute;
+    z-index: 2;
+}
+
+menu-bar-main {
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    font-size: 1em;
+}
+
+.title-main-display a {
+    letter-spacing: 0.1em;
+    color: white;
+    text-decoration: none;
+}
+
+.title-main-display span {
+    font-weight: 100;
+    font-size: 2em;
 }
 
 .title-main-display img {
@@ -37,48 +67,72 @@ body{
     color: white;
 }
 
+.title {
+    letter-spacing: 0.1em
+}
+
+.specials-container {
+    margin: 0 0 3% 0;
+}
+
 specials-header {
     background-image: url(./images/whirlpool.png);
     background-color: white;
     display: flex;
     justify-content: center;
     font-size: 1.25em;
-    padding: 8px 0 8px 0;
-    color: #e8461e;
-    font-family: 'Playfair Display', serif;
+    margin: 8px;
+}
+
+main-header-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 25vh;
+}
+
+#phone {
+    font-size: 1em;
 }
 
 .weekly-specials {
-    background: linear-gradient(#121312, black);
-    height: 58vh;
-    display: flex;
-    flex-direction: column;
-    color: white;
-    margin-top: 3vh;
+    height: 65vh;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 88vw;
+    margin: 0 auto;
 }
 
-.weekly-specials img{
-    height: 18vh;
-    border-radius: 50%;
-    /*background-image: url('https://cdn.kiwilimon.com/recetaimagen/28854/thumb400x300-29980.jpg');*/
-    /*background-repeat: no-repeat;
-    background-size: cover;*/
-    /*width: 33vw;*/
-    /*border: solid white 1px;*/
-}
-.weekly-specials special1, special2, special3 {
-        display: flex;
-    /*flex-direction: column;*/
+.layer {
+    opacity: .95;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
     justify-content: space-around;
 }
 
+.weekly-specials img {
+    height: 18vh;
+    border-radius: 50%;
+    opacity: 1;
+}
+
+.weekly-specials special1,
+special2,
+special3 {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 4em;
+}
+
+
+/*
 .specials-text{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-content: center;
-}
-
+}*/
 
 .weekly-specials h4 {
     text-align: center;
@@ -88,25 +142,259 @@ specials-header {
     font-size: 3vh;
     text-align: center;
 }
-.about{
-    background-image: url(./images/chef.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100vw; 
-    height: 250px;
-}
-/*.about img{
-    width: 100%;
-}*/
-.about-text{
-    z-index: 5;
-    width: 34%;
+
+.menu-image {
+    background-image: url('./images/toro.png');
     text-align: center;
-    background-color: rgba(255, 255, 255, 0.8)
-}
-/*
-.test {
     width: 100vw;
     height: 100vh;
-    background-color: white;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    z-index: 0;
+}
+
+.menu {
+    width: 100vw;
+    height: 100vh;
+    background: rgba(180, 180, 180, 0.85);
+    z-index: 1;
+    margin-top: -100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+}
+
+.menu h1 {
+    /*text-align: center;
+    font-size: 2.5em;
+    color: green;
+    margin-top: 15px;*/
+    letter-spacing: 0.2em;
+    display: flex;
+    justify-content: center;
+    font-size: 1.25em;
+    margin: 8px;
+}
+
+.menu h2 {
+    margin-right: 0;
+    line-height: 45px;
+    display: flex;
+    font-size: 2em;
+    border-bottom: solid white 1px;
+    color: purple;
+    letter-spacing: 0.1em;
+}
+
+#menu-items {
+    margin: 0 6% 1% 6%;
+    height: 89vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 1em;
+}
+
+#menu-items span {
+    font-weight: 200;
+    letter-spacing: 0.05em;
+}
+
+#menu-items li {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+#ind-item-text {
+    margin-right: 15px;
+}
+
+#ind-item-text description {
+    font-size: .75em;
+    font-weight: lighter;
+}
+
+.location-page {
+    background: -webkit-linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
+    background: -moz-linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
+    background: -o-linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
+    background-color: purple;
+    width: 100vw;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    height: 7vh;
+}
+
+.contact {
+    text-align: center;
+    margin-left: 6%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    font-weight: 100;
+    font-size: .75em;
+    letter-spacing: 0.02em;
+    margin: 0;
+    width: 89vw;
+}
+
+
+/*.contact span{
+    width: 20%;
 }*/
+
+
+/*for larger screens*/
+
+@media (min-width: 668px) {
+    @keyframes zoomin {
+        0% {
+            transform: scale(1);
+        }
+        50% {
+            transform: scale(1.5);
+        }
+        100% {
+            transform: scale(1);
+        }
+    }
+    .main-wrapper {
+        overflow: hidden;
+        width: 100vw;
+        height: 100vh;
+        position: relative;
+    }
+    .landing-page {
+        width: 100vw;
+        height: 100vh;
+        text-align: center;
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: repeat;
+        animation: zoomin 120s ease-in infinite;
+        transition: all .5s ease-in-out;
+        overflow: hidden;
+        z-index: 1;
+        position: absolute;
+    }
+    .title-main-display {
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        z-index: 999;
+        background: -webkit-linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+        background: -moz-linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+        background: -o-linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+        background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+    }
+    .title-main-display span {
+        font-weight: 100;
+        font-size: 7em;
+    }
+    .title {
+        letter-spacing: 0.12em;
+    }
+    main-header-text {
+        height: 65vh;
+    }
+    #phone {
+        font-size: 3em;
+    }
+    menu-bar-main {
+        height: 30vh;
+        font-size: 3em;
+    }
+    #menu-items {
+        width: 85vw;
+        height: 100vh;
+    }
+    #menu-items li {
+        font-size: 1.75em;
+    }
+    item-name {
+        font-size: 1.5em;
+    }
+    price {
+        font-size: 1.25em;
+    }
+    #menu-items span {
+        font-size: 1.25em;
+        letter-spacing: 0.05em;
+    }
+    #ind-item-text description {
+        font-size: 0.8em;
+    }
+    .weekly-specials {
+        letter-spacing: 0.1em;
+        height: 100vh;
+    }
+    specials-header {
+        letter-spacing: 0.2em;
+        font-size: 4.25em;
+        width: 100vw;
+        height: 10vh;
+        align-items: center;
+    }
+    .layer {
+        display: flex;
+        justify-content: space-around;
+    }
+    .weekly-specials img {
+        height: 35vh;
+        /*margin: 2vw;*/
+    }
+    .weekly-specials div {
+        margin: 7% 0 7% 0;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    .weekly-specials h4 {
+        font-size: 200%;
+    }
+    .weekly-specials span {
+        font-size: 400%;
+    }
+    .weekly-specials special1,
+    special2,
+    special3 {
+        width: 85vw;
+    }
+    .menu-image {
+        background-size: 72%;
+    }
+    .menu h1 {
+        letter-spacing: 0.2em;
+        font-size: 4.25em;
+        width: 100vw;
+        height: 10vh;
+        align-items: center;
+    }
+    .line {
+        border-top: solid whitesmoke 3px;
+        width: 54vw;
+        z-index: 1;
+    }
+    .contact {
+        font-size: .95em;
+        letter-spacing: 0.02em;
+        margin: 0;
+        width: 85vw;
+        height: 100%;
+        flex-direction: row;
+    }
+    .contact span {
+        margin-top: 0.8em;
+    }
+    .location-page {
+        height: 6vh;
+        border-top: solid 1px white;
+    }
+}
